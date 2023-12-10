@@ -1,0 +1,10 @@
+const mongoose = require('mongoose');
+ 
+const driverSchema = mongoose.Schema({
+  name: String,
+  team: String,
+  wins: Number,
+});
+ 
+module.exports = mongoose.model('Driver', driverSchema);
+ 
